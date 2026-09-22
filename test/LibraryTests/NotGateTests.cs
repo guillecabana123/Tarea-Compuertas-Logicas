@@ -8,7 +8,7 @@ namespace Ucu.Poo.Exercise
         public void Evaluate_True_ReturnsFalse()
         {
             // Arrange
-            NotGate not = new OrGate();
+            NotGate not = new NotGate();
             not.AddInput(new Value(true));
 
             // Act
@@ -22,7 +22,7 @@ namespace Ucu.Poo.Exercise
         public void Evaluate_False_ReturnsTrue()
         {
             // Arrange
-            NotGate not = new OrGate();
+            NotGate not = new NotGate();
             not.AddInput(new Value(false));
 
             // Act

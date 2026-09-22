@@ -1,13 +1,16 @@
-public class AndGate : Gate
+namespace Ucu.Poo.Exercise
 {
-    public override bool Evaluate()
+    public class AndGate : Gate
     {
-        bool result = true;
-        foreach (ILogicComponent input in this.Inputs)
+        public override bool Evaluate()
         {
-            result = result && input.Evaluate();
-        }
+            bool result = true;
+            foreach (ILogicComponent input in this.Inputs)
+            {
+                result = result && input.Evaluate();
+            }
 
-        return result;
+            return result;
+        }
     }
 }

@@ -6,7 +6,7 @@ namespace Ucu.Poo.Exercise
     {
         private List<ILogicComponent> inputs = new List<ILogicComponent>();
 
-        public void AddInput(ILogicComponent input)
+        public virtual void AddInput(ILogicComponent input)
         {
             this.inputs.Add(input);
         }

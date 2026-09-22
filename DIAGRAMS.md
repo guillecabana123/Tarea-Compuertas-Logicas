@@ -1,3 +1,4 @@
+```mermaid
 classDiagram
     class ILogicComponent {
         <<interface>>
@@ -25,3 +26,4 @@ classDiagram
     Gate <|-- AndGate
     Gate <|-- OrGate
     Gate <|-- NotGate
+```
